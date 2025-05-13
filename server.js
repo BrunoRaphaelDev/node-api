@@ -13,7 +13,7 @@ app.get('/users', async (req, res) => { // Rota para listar os usuários
 
     const users = await prisma.user.findMany() // Busca todos os usuários
 
-    res.status(200).json(users);
+    res.status(200).json(users); 
 
 
 });
